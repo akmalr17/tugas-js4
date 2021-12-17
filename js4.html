@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Jumlah Dua Bilangan</title>
+</head>
+<body>
+    <script>
+        function cetakhasil() {
+            let bilper = document.getElementById('bilper');
+            let bilked = document.getElementById('bilked');
+            let hasil = document.getElementById('hasil');
+            hasil.value = Number(bilper.value) + Number(bilked.value);
+        }
+    </script>
+
+    <h3>
+        Menghitung Jumlah 2 Bilangan
+    </h3>
+    <div>
+        <input id="bilper" type="number">
+    </div>
+    +
+    <br>
+    <div>
+        <input id="bilked" type="number">
+    </div>
+    =
+    <br>
+    <button onclick="cetakhasil()">hasil</button>
+    <br>
+    <br>
+    <input id="hasil" type="number">
+</body>
+</html>
